@@ -1,0 +1,15 @@
+.clients {
+  padding: 40px 0;
+  .row {
+    .clients__logo {
+      display: flex;
+      height: 70px;
+      align-items: center;
+      justify-content: center;
+      .clients__img {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+}

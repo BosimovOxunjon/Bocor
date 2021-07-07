@@ -1,0 +1,23 @@
+.contact {
+  .contact__box {
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 0 30px rgb(214 215 216 / 60%);
+    padding: 20px 0 30px 0;
+    background: #fff;
+  }
+  input {
+    padding: 10px 15px;
+  }
+  .contact__btn {
+    background: #fdc134;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .contact__btn:hover {
+    background: #fdd067;
+  }
+}

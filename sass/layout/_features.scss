@@ -1,0 +1,22 @@
+.feature {
+  text-align: left;
+  background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+  min-height: 100vh;
+  .feature__title {
+    font-weight: 700;
+    font-size: 26px;
+    color: #213b52;
+  }
+  .feature__text {
+    font-style: italic;
+  }
+  .feature__list {
+    list-style: none;
+    padding: 0;
+    .feature__icon {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

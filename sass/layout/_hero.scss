@@ -1,0 +1,25 @@
+.hero {
+  background-color: #213b52;
+  min-height: 88vh;
+  .row {
+    align-items: center;
+    .col-lg-6:first-of-type {
+      order: 1;
+      @include respond(lg) {
+        order: 0;
+      }
+    }
+    .hero__title {
+      font-size: 48px;
+      color: #d2e0ed;
+    }
+    h2 {
+      color: $mainwhite;
+      font-size: 22px;
+    }
+    .hero__img {
+      height: 60%;
+      //   width: auto;
+    }
+  }
+}

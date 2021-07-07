@@ -1,0 +1,26 @@
+.team {
+  .row {
+    align-items: center;
+    .team__card {
+      text-align: center;
+      padding: 0 10px;
+      margin-bottom: 30px;
+      min-height: 300px;
+      .team__card-img {
+        height: 100%;
+        img {
+          object-fit: cover;
+        }
+      }
+      .team__card-title {
+        color: $mainblue;
+        text-transform: capitalize;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .team__card-text {
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  background: #213b52;
+  nav {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: $mainwhite;
+    }
+    .header__logo {
+      position: fixed;
+      top: -6px;
+      left: 25px;
+      @include respond(lg) {
+        position: static;
+      }
+      .header__brand {
+        background: $mainblue;
+        text-transform: uppercase;
+        color: $mainwhite;
+        z-index: 100;
+        span {
+          color: $mainyellow;
+        }
+      }
+    }
+    .header__list {
+      display: none;
+      list-style: none;
+      @include respond(lg) {
+        display: flex;
+      }
+      .header__list-item {
+        margin: 10px;
+      }
+      .pop {
+        display: none;
+        list-style: none;
+        padding: 0;
+      }
+      .pop:target {
+        display: inline-block;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+    .header__btn {
+      background: #213b52;
+      color: $mainwhite;
+      @include respond(lg) {
+        display: inline-block;
+      }
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    label[for="checkbox"] {
+      position: fixed;
+      top: 20px;
+      right: 25px;
+      z-index: 100;
+      cursor: pointer;
+      @include respond(lg) {
+        display: none;
+      }
+      .header__menu-item {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 5px;
+        background: $mainyellow;
+        transition: 0.01s;
+        transform-origin: 0;
+      }
+    }
+    input[type="checkbox"]:checked + label {
+      .header__menu-item:first-of-type {
+        transform: rotate(405deg);
+      }
+      .header__menu-item:nth-of-type(2) {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .header__menu-item:last-of-type {
+        transform: rotate(-405deg);
+      }
+    }
+    input[type="checkbox"]:checked + label ~ .header__list {
+      position: fixed;
+      z-index: 90;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      top: 50px;
+      margin: auto 0;
+      width: 93%;
+      right: 15px;
+      left: 15px;
+      height: 90vh;
+      background-color: $mainwhite;
+      border-radius: 10px;
+      box-shadow: 1px 1px 15px #c5c6d4, 1px 1px 15px #a5a5a9;
+      a {
+        color: $mainblue;
+      }
+      .header__btn {
+        color: $mainwhite;
+        border: $mainblue;
+      }
+    }
+  }
+}

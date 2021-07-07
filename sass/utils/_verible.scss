@@ -1,0 +1,9 @@
+$mainblack: #000;
+$mainblue: #213b52;
+$mainwhite: white;
+$mainred: #ee5514;
+$mainyellow: #fdc134;
+
+@function sum($a, $b) {
+  @return $a + $b;
+}

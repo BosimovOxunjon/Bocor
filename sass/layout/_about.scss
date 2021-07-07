@@ -1,0 +1,33 @@
+.about {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
+  padding-left: 10px;
+  text-align: left;
+  .about__img {
+    object-fit: cover;
+  }
+  .about__title {
+    font-weight: 700;
+    font-size: 34px;
+    color: #213b52;
+  }
+  .about__bx {
+    margin-top: 25px;
+    .about__icon {
+      float: left;
+      width: 40px;
+      height: 40px;
+    }
+    .about__bx-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 5px 0 10px 60px;
+      color: #213b52;
+    }
+    .about__bx-text {
+      font-size: 15px;
+      color: #848484;
+      margin-left: 60px;
+    }
+  }
+}

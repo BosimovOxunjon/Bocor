@@ -1,0 +1,48 @@
+.footer {
+  position: relative;
+  background: url(../../assets/img/footer/footer-bg.jpg) center center no-repeat;
+  min-height: 400px;
+  padding-top: 35px;
+  .footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(26, 46, 64, 0.85);
+    z-index: 1;
+  }
+  .row {
+    justify-content: center;
+    .footer__title,
+    .footer__text {
+      text-align: center;
+      color: $mainwhite;
+    }
+    .footer__title {
+      font-size: 36px;
+    }
+    .footer__text {
+      font-style: italic;
+    }
+    form {
+      // position: relative;
+      width: 100%;
+      background-color: $mainwhite;
+      border-radius: 35px;
+      padding: 10px;
+      input[type="email"] {
+        // position: absolute;
+        padding: 10px 15px;
+        width: 80%;
+      }
+      input[type="submit"] {
+        // position: absolute;
+        display: inline-block;
+        border-radius: 35px;
+        right: 0;
+      }
+    }
+  }
+}
